@@ -19,6 +19,15 @@
                 align-items:center;
                 font-family: 'Roboto', sans-serif;
                 font-size:16px;
+                .flip-icon-holder{
+                    border-radius:50%;
+                    width:40px;
+                    height:40px;
+                    position: absolute;
+                    display: block;
+                    bottom: 15px;
+                    right: 15px;
+                }
                 &.back {
                     -webkit-transform: rotateY(180deg);
                     transform: rotateY(180deg);
@@ -27,8 +36,9 @@
                     .short-desc{
                         height:auto;
                         padding:0 30px;
-                        font-size:14px;
-                        font-weight:600;
+                        font-size:12px;
+                        font-weight:lighter;
+                        margin-top:-20px;
                         a{
                             font-style:italic;
                             color:#FFDE03;
@@ -38,10 +48,16 @@
                             }
                         }
                     }
+                    .flip-icon-holder{
+                        background-color:#FFDE03;
+                    }
                 }
                 &.front{
                     background-color: #FFDE03;
                     color:#fff;
+                    .flip-icon-holder{
+                        background-color:#6200EE;
+                    }
                 }
             }
             &.flipped{
